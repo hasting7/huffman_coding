@@ -1,4 +1,5 @@
 #!/bin/bash
 echo "____DIRECTIONS____"
-echo "To use this program the only file you have to edit is the \'key.txt\' file so open like the text editor app"
-echo "then to check if the key is right, make sure the key.txt is saved then type exactly \'./run_me d\' (the d is for decode)"
+echo "To use this program the only file you have to edit is the 'key.txt' file so open like the text editor app"
+echo "then to check if the key is right, make sure the key.txt is saved then type exactly './run_me d' (the d is for decode)"
+echo "no quotes either i'm im just showing you thats the command"
