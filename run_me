@@ -1,0 +1,33 @@
+#!/bin/bash
+make > /dev/null || exit 1
+
+coded="coded.txt"
+key="key.txt"
+map="-."
+
+rm -f $coded
+if [ ! -e $coded ]; then
+	echo ..-------.--...-..-..-.-.-----.-...-..-...--.-----.--.--..-...--.-.-.-.--.- > $coded
+fi
+if [ ! -e $key ]; then
+	echo this is where you put a text message > $key
+fi
+
+if [ ! $# -eq 1 ]; then
+	echo To use this program you need to put either a \'e\' or \'d\' for encode or decode after \'./run_me\'
+	echo So to decode a message you would run \'./run_me d\'
+	exit 1
+fi
+
+if [ ! -s $key ]; then
+	echo Put a text message I sent in the $key file in this folder then run this script again
+	exit 1
+fi
+echo The original message:
+cat $coded
+echo \n
+echo new message:
+
+./huffman $key $map $1 $coded
+
+exit 0

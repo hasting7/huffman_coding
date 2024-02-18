@@ -1,0 +1,1 @@
+Its also cool cause there are 128 different like computer characters so an easy solution would be to have 00000000 (eight numbers) to represent each character but that takes hella space so they way I did it most characters only take 2 - 7 numbers to represent which saves hella space
